@@ -33,3 +33,5 @@ def actual_ingredients():
     response_body = response.json()
     # Извлекаем все _id из ответа сервера
     return [ingredient["_id"] for ingredient in response_body["data"]]
+
+# update conftest
