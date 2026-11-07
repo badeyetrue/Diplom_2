@@ -60,3 +60,5 @@ def delete_user_by_payload(user_payload):
         login_response.raise_for_status()
         delete_response = api_client.delete_user(login_response.json()["accessToken"])
         delete_response.raise_for_status()
+
+# update helpers
